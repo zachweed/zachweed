@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Decision Trees"
+title:  "[Machine Learning] - Decision Trees in STEM & Law"
 date:   2018-02-26 16:09:52 -0500
 categories: machine-learning artificial-intelligence trees decision-trees
 ---
