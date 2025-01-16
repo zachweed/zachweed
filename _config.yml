@@ -16,7 +16,7 @@
 title: zweed
 description: >- # this means to ignore newlines until "baseurl:"
   Observations
-baseurl: "/zachweed" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://zachweed.github.io"
 github_username:  zachweed
 # Build settings
