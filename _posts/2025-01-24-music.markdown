@@ -35,6 +35,22 @@ As a means of identifying what this looks like for example:
 
 As a result of some of these obscure genres, I began working on a music tagging library so that I can programatically tag local files (FLAC, MP3 [primarily v0 & 320kbps], etc.) and figured I would share it here. While it is not complete yet it is worth identifying the simplicity of working with these through [MusicBrainz], an open source music encyclopedia, as an API, and the low-latency elements of C++ as a language. In terms of the C++, what I found interesting coming from high-level languages is how we must include librarys like [Boost] as a means of traversing directories, whereas in [Ruby] this is relatively straightforward. Anyways, I call it [la_musicca].
 
+For transparencies sake, I originally built this with a combination of [beets] in python, and a bash script, in a private repository. Having said that, my goal here is working around python and doing this directly within C++. 
+
+Having said that, identifying how I built this within python, my dotfiles have different files for each aspect of my system. This includes:
+
+- python,
+- bash,
+- ruby, &c.
+
+So, when I start on a different machine, I fetch my repository, and it goes through calling each script, generating appropriate files and installing specific modules. In this example I install pip, along with beats, etc., then from a configuration YAML file, I traverse my directory with preconfigured structure (e.g. differentiating compilations from artist-only files) programatically writing ID3 tags within each MP3, so that things are well-ordered within my directory structure.
+
+
+### Conclusion
+
+In sum: music has distinct elements of categorization that we can work with for eloquently organizing music.
+
+[beets]: beets.io
 [MusicBrainz]: https://www.musicbrainz.org
 [Boost]: https://boost.org
 [Ruby]: https://ruby-doc.org/core-3.0.0/Dir.html
