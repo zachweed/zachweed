@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "[Machine Learning] - ML Helper Modules"
+date:   2025-01-27 00:09:52 -0500
+categories: machine-learning support-vector-machines tensor-flow hugging-face
+---
+### Preface
+This system is by no means complete, nor has it been organized exactly how I would like for it to be. Having said that, there is enough foundation here that can provide benefit to people beyond myself -- hence me sharing it.
+
+### How it started
+
+[ai] is a personal library I wrote originally a while ago (2017), where I wanted to determine the sentiment of sentences. I found this interesting because sentiment is not incredibly straightforward. What I mean by this is that merely saying the word 'no' does not make a setence negative. In fact, if I were to say something like 'no I do not want to swallow fire', and I meant it in a literal sense, then this would technically be positive, in that it is a good decision for one to not swallow fire. 
+
+Anyways I did some research and I found [nltk] - (Natural Language Toolkit) and it provides simple ways of determining sentiment and polarity (summed sentiment) of chunks of text. Fast-forward to today, this is one of the foundation libraries used in many libraries present on hugging-face, which is helpful for context because it has provided benefit for quite a while, with a wide breadth of implementation. How it works is including a variety of corpora that in some cases have been used for decades, (for example: [Brown] Corpus), one called [vader-sentiment], a [submodule] of nltk that (as a sidenote) has some funny associations with my [given] name. Anyways, that specifically handles assigning sentiment in essence through keywords. At a lower-level, this is done by applying [scalar] operations on [matrices] and adjusting the overall sentiment as a result, found through the various columns of the keyword matrix, concepts from Discrete Mathematics and Linear Algebra, and Grammar for that matter.
+
+Suffice to say there are some cool concepts included in the libraries that are included through nltk. And again, this started the process as I wanted to determine the sentiment of a given sentence.
+
+### What it became
+
+Through experience, with various organizations like: Twitter, Airbnb, and McKesson, and some academic work with various universities like Ohio State, Pitt, & Harvard, I learned how I can call further abstractions of these concepts as a means of doing more full-fledged work within Machine Learning, per se, specifically within concepts like multi-language translation and chatbot technology. 
+
+From there I went on and continued incorporating this work within the library, while also providing documentation and appropriate sources for people. Feel free and read the [documentation]!
+
+### Conclusion
+
+Sometimes it is a good idea to start building something, even if it is super simple, given how it could blossom over time.
+
+
+[ai]: https://github.com/zachweed/ai
+[nltk]: https://nltk.org
+[brown]: https://libguides.brown.edu/cs/corpora
+[vader-sentiment]: https://github.com/cjhutto/vaderSentiment
+[given]: https://github.com/cjhutto/vaderSentiment/blob/master/vaderSentiment/vader_lexicon.txt#L1634
+[scalar]: https://github.com/cjhutto/vaderSentiment/blob/master/vaderSentiment/vaderSentiment.py#L137
+[matrices]: https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:matrics/x9e81a4f98389efdf:multiplying-matrices-by-scalars/a/multiplying-matrices-by-scalars
+[submodule]: https://www.nltk.org/_modules/nltk/sentiment/vader.html
+[documentation]: https://github.com/zachweed/ai/tree/master
