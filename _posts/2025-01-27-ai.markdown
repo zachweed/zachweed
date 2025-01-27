@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Machine Learning] - ML Helper Modules"
+title:  "[Machine Learning] - Some ML Helper Modules"
 date:   2025-01-27 00:09:52 -0500
 categories: machine-learning support-vector-machines tensor-flow hugging-face
 ---
@@ -17,7 +17,7 @@ Suffice to say there are some cool concepts included in the libraries that are i
 
 ### What it became
 
-Through experience, with various organizations like: Twitter, Airbnb, and McKesson, and some academic work with various universities like Ohio State, Pitt, & Harvard, I learned how I can call further abstractions of these concepts as a means of doing more full-fledged work within Machine Learning, per se, specifically within concepts like multi-language translation and chatbot technology. 
+Through experience, with various organizations and some academic work with various universities, I learned how I can call further abstractions of these concepts as a means of doing more full-fledged work within Machine Learning, per se, specifically within concepts like multi-language translation and chatbot technology.
 
 From there I went on and continued incorporating this work within the library, while also providing documentation and appropriate sources for people. Feel free and read the [documentation]!
 

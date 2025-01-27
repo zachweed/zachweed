@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Music] - Programming MP3 Tagging"
+title:  "[Music] - Programmatically Tagging FLAC and MP3"
 date:   2025-01-24 16:09:52 -0500
 categories: music
 ---
