@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "[Music] - Programming MP3 Tagging"
+date:   2025-01-24 16:09:52 -0500
+categories: music
+---
+### Preface
+I am sure many people do not care what my musical interests are. Having said that, this is a key element of my life outside of work. That is, tagging, and categorizing music.
+
+### Genres
+
+Akin with coffees, I find that many genres of music have subtle and nuanced elements to what makes their music unique. Specifically, we have artists that are within a genre such as hip-hop, that are within the sub-genre of underground hip-hop. Now underground hip-hop can vary from southern rap & texas rap, through to ambient & experimental (instrumental and non) hip hop. Beyond that, there are also increasingly deep levels of sub genres within. In the example of the former, we have a vast difference between something like Memphis Rap with Project Pat and Chopped & Screwed Hip-Hop with DJ Screw. 
+
+I tend to enjoy instrumental hip-hop, specifically harmonius and melodic stuff. 
+
+As a means of identifying what this looks like for example:
+
+- Hip-Hop
+    - Instrumental Hip-Hop
+        - Experimental Hip-Hop
+            - Ambient
+                - Sixtoo
+            - Trip-Hop
+                - Sneaker Pimps
+    - Non-Instrumental Hip-Hop
+        - Experimental Hip-Hop
+            - Cannibal Ox
+        - Downtempo
+            - Sneaker Pimps
+            - Portishead
+        - Chopped & Screwed
+            - DJ Screw
+
+### Tagging Music
+
+As a result of some of these obscure genres, I began working on a music tagging library so that I can programatically tag local files (FLAC, MP3 [primarily v0 & 320kbps], etc.) and figured I would share it here. While it is not complete yet it is worth identifying the simplicity of working with these through [MusicBrainz], an open source music encyclopedia, as an API, and the low-latency elements of C++ as a language. In terms of the C++, what I found interesting coming from high-level languages is how we must include librarys like [Boost] as a means of traversing directories, whereas in [Ruby] this is relatively straightforward. Anyways, I call it [la_musicca].
+
+[MusicBrainz]: https://www.musicbrainz.org
+[Boost]: https://boost.org
+[Ruby]: https://ruby-doc.org/core-3.0.0/Dir.html
+[la_musicca]: https://github.com/zachweed/la_musicca
